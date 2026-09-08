@@ -1,6 +1,19 @@
 # EvilExtension
 
-**DEMO ONLY — not for distribution.**
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Manifest V3](https://img.shields.io/badge/manifest-v3-4285F4.svg)](manifest.json)
+[![Demo only](https://img.shields.io/badge/status-demo%20only%2C%20not%20for%20distribution-critical.svg)](#scope-and-warnings)
+
+Every Chrome extension permission, wired to a real, live call against your
+own browser — so you can see exactly what `debugger`, `cookies`, or
+`nativeMessaging` actually unlocks instead of trusting a one-line
+description.
+
+## Screenshots
+
+| Catalog overview | Panel detail | Live call |
+|---|---|---|
+| ![Permission catalog overview](screenshots/overview.png) | ![Cookies panel, a Critical-risk permission](screenshots/cookies-panel.png) | ![system.memory panel showing a live result](screenshots/live-call.png) |
 
 A Chrome (Manifest V3) extension that loads the *entire* internal permission
 risk catalog — Critical, High, Medium, and Standard — and wires each
@@ -16,12 +29,6 @@ an attacker's server) — that line is shown as text only and is never
 executed. A few permissions (ChromeOS device APIs, enterprise-managed APIs,
 platform-app-only APIs) are marked as unavailable outside a managed ChromeOS
 environment instead of faking a result.
-
-## Screenshots
-
-| Catalog overview | Panel detail | Live call |
-|---|---|---|
-| ![Permission catalog overview](screenshots/overview.png) | ![Cookies panel, a Critical-risk permission](screenshots/cookies-panel.png) | ![system.memory panel showing a live result](screenshots/live-call.png) |
 
 ## Why this exists
 
