@@ -325,7 +325,7 @@ item("Medium", "clipboardWrite", "clipboardWrite",
   `Writes to your system clipboard, silently, with no extra prompt — from an extension page, this permission
    removes the need for the page to even have focus in some contexts.`,
   async () => {
-    const text = `This was written to your clipboard by "Danger Extension" — clipboardWrite needs no prompt.`;
+    const text = `This was written to your clipboard by "EvilExtension" — clipboardWrite needs no prompt.`;
     await navigator.clipboard.writeText(text);
     out("clipboardWrite", `<div class="muted">Wrote to clipboard:</div><pre>${esc(text)}</pre>`);
   }
@@ -600,7 +600,7 @@ item("Standard", "clipboardRead", "clipboardRead",
 
 item("Standard", "contextMenus", "contextMenus",
   `Adds items to your right-click menu — this extension registered one at install
-   ("Danger Extension: inspect this"). Clicking it hands the extension the page URL,
+   ("EvilExtension: inspect this"). Clicking it hands the extension the page URL,
    link URL, image URL, and any selected text you right-clicked on.`,
   async () => {
     const { contextMenuLog = [] } = await chrome.storage.session.get("contextMenuLog");
@@ -758,7 +758,7 @@ item("Standard", "notifications", "notifications",
     chrome.notifications.create("", {
       type: "basic",
       iconUrl: "https://www.google.com/favicon.ico",
-      title: "Danger Extension",
+      title: "EvilExtension",
       message: "This is what a notifications-permission extension can push to your OS, any time it wants."
     });
     out("notifications", '<div class="muted">Notification fired.</div>');
@@ -909,7 +909,7 @@ item("Standard", "search", "search",
   `Can trigger a search with your default search engine directly — this opens a new tab.`,
   null,
   `<div class="row">
-     <input id="search-text" type="text" placeholder="search text" value="danger extension demo" />
+     <input id="search-text" type="text" placeholder="search text" value="evil extension demo" />
      <button class="load" data-load="search">Run search (opens new tab)</button>
    </div>`
 );
@@ -995,7 +995,7 @@ item("Standard", "tabs", "tabs",
 item("Standard", "tts", "tts",
   `Speaks arbitrary text out loud through your speakers, unprompted.`,
   async () => {
-    chrome.tts.speak('This is Danger Extension, talking through your speakers, using nothing but the tts permission.');
+    chrome.tts.speak('This is EvilExtension, talking through your speakers, using nothing but the tts permission.');
     out("tts", '<div class="muted">chrome.tts.speak() called.</div>');
   }
 );

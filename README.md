@@ -1,4 +1,4 @@
-# Danger Extension
+# EvilExtension
 
 **DEMO ONLY — not for distribution.**
 

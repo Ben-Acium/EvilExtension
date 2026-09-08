@@ -2,7 +2,7 @@
 
 ## What this project is
 
-Danger Extension is a **demo-only** browser extension that
+EvilExtension is a **demo-only** browser extension that
 deliberately requests the full catalog of high-risk Chrome extension
 permissions (including `debugger`, `nativeMessaging`, `management`,
 `webRequest`, and `<all_urls>` host access) in order to demonstrate, live
