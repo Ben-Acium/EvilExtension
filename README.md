@@ -83,6 +83,8 @@ grouped by risk tier.
 - Do not publish this to the Chrome Web Store or distribute the packed
   extension to end users.
 - See [SECURITY.md](SECURITY.md) for responsible use and disclosure notes.
+- See [DEFENSES.md](DEFENSES.md) for what actually stops these attacks —
+  session/token binding, extension control, and continuous access.
 
 ## License
 
