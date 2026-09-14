@@ -20,3 +20,9 @@ Thumbs.db
 # Node (in case tooling is added later)
 node_modules/
 npm-debug.log*
+
+# Claude Code local/session config — not meant to be shared via the repo
+.claude/
+.claude.json
+.mcp.json
+CLAUDE.md
